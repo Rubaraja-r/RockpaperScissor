@@ -1,6 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+ 
+:root {
+    --text-color: rgb(60, 22, 95);
+    --background-color:#eec0c6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body
 {
     font-family: 'PT Serif', serif;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100vw;
+    color: var(--text-color);
+}
+main {
+   height:35rem;
+   width:35rem;
+   border-radius: 2rem;
+   border-radius: 50px;
+   background: #ec86a8;
+   border-radius: 50px;
+
+}
+header h1{
+   
+    display:flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size:2rem;
+}
+header {
+    display:flex;
+    justify-content:space-between;
+  
+}
+header .C2{
+    margin-top: 3rem;
+    padding-right: 2rem;
+    
+}
+.hands {
+    padding-top: 1rem;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:0.5rem;
+    
+}
+.hands button{
+    width:7rem;
+    height:7rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    margin:1.5rem;
+    background-color: maroon;
+    color:floralwhite;
+    transition-delay: 1s ease;
+    font-weight: bold;
+   
+}  
+.hands button:hover {
+  transform: translateY(5px);
+}
+.hands button:hover:active {
+    transform:scale(1.1);
+}
+.result{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.result p{
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+}
+.gresult div{
+    height:3rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+    background-color:yellow;
+    color:black;
+    font-size: 1.7rem;
+    width:50%;
+    margin:1rem auto;
+
+}
+.gstart button{
+     width:50%;
+     height:3rem;
+     color:floralwhite;
+     font-weight: bolder;
+     font-size: 1.6rem;
+     background-color:black ;
+     margin-top:1rem;
+    
+}
+.hidden{
+    display:none;
+}
+
+.design button {
+ 
+   width:7rem;
+   height:7rem;
+   border-radius: 40%;
+   font-size: 4rem;
+   background-color:aqua;
+
+}
+.design button:hover {
+    transform: translateY(5px);
+  }
+.design {
+  
+    display:flex;
+    justify-content: space-between;
+    margin:2.5rem;
+}
+.hide {
+    display: none;
 }
